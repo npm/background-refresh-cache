@@ -1,0 +1,40 @@
+{
+  "name": "@npmcorp/background-refresh-cache",
+  "version": "1.0.0",
+  "description": "serve up what's in the cache and update the cache for future requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm/background-refresh-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "background",
+    "refresh"
+  ],
+  "author": "Raquel Vélez <raquel@rckbt.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/background-refresh-cache/issues"
+  },
+  "homepage": "https://github.com/npm/background-refresh-cache#readme",
+  "dependencies": {
+    "@npmcorp/redis-pool": "^1.0.0",
+    "bluebird": "^3.4.1",
+    "bole": "^3.0.1",
+    "debuglog": "^1.0.1"
+  },
+  "devDependencies": {
+    "redis-mock": "^0.10.0",
+    "require-inject": "^1.4.0",
+    "tap": "^6.3.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  }
+}
