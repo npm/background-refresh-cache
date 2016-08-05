@@ -50,7 +50,6 @@ class Cache extends EventEmitter {
         if (cached.fetchedAt < freshAfter) {
           debug("Freshening %j because content fetched at %j is older than %j", key, cached.fetchedAt, freshAfter);
           this.fetch(key).catch(err => {
-            console.log('error will robinson:', err)
             if (err.statusCode == 404) {
               debug("Deleting %j from cache", key);
               return pool.withConnection(redis => {
