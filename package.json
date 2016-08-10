@@ -1,6 +1,6 @@
 {
   "name": "@npmcorp/background-refresh-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "serve up what's in the cache and update the cache for future requests",
   "main": "index.js",
   "scripts": {
