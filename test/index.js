@@ -107,7 +107,7 @@ tap.test("errors are passed through verbatim", t => {
 });
 
 tap.test('wrapping up...', t => {
-  pool.drainAsync().then(() => pool.destroyAllNow());
+  pool.drain().then(() => pool.clear());
   t.done();
 });
 

@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/npm/background-refresh-cache#readme",
   "dependencies": {
-    "@npmcorp/redis-pool": "^1.0.0",
+    "@npmcorp/redis-pool": "^2.0.1",
     "bluebird": "^3.4.1",
     "bole": "^3.0.1",
     "debuglog": "^1.0.1"
